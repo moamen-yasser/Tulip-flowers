@@ -336,6 +336,7 @@ footer .image button{
     height: 160vh;
     margin-top: 50px;
     box-shadow: 0 0 0 0 #ffffff;
+    margin-bottom:200px;
 }
 .sec1 .row{
     display: flex;
