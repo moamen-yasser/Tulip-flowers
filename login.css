@@ -440,7 +440,7 @@ label{
     }
     body{
         overflow-x: hidden !important;
-        height: 130vh;
+        height: 120vh;
         max-width: 100%;
     }
 /******************************************/  
@@ -476,7 +476,7 @@ label{
     box-shadow: 0 0 0 0 #ffffff;
     width: 95%;
     position: relative;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
