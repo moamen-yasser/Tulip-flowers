@@ -388,7 +388,7 @@ section #momo{
     box-shadow: 0 0 0 0 #ffffff;
     width: 95%;
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
