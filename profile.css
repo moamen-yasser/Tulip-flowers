@@ -354,7 +354,7 @@ button{
     }
     body{
         overflow-x: hidden !important;
-        height: 130vh;
+        height: 115vh;
         max-width: 100% !important;
     }
 /******************************************/  
@@ -383,7 +383,7 @@ button{
     padding: 20px 30px;
 }
 .active{
-    margin-bottom: -500px;
+    margin-bottom: -750px;
 }
 /**********************************/
 .top{
@@ -405,7 +405,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 70px;
 }
 button{
     position: relative;
