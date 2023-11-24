@@ -287,7 +287,7 @@ button{
     }
     body{
         overflow-x: hidden !important;
-        height: 130vh;
+        height: 115vh;
         max-width: 100% !important;
     }
 /******************************************/  
@@ -316,7 +316,7 @@ button{
     padding: 20px 30px;
 }
 .active{
-    margin-bottom: -500px;
+    margin-bottom: -650px;
 }
 /**********************************/
 .top{
@@ -383,7 +383,7 @@ button{
     padding: 20px 30px;
 }
 .active{
-    margin-bottom: -680px;
+    margin-bottom: -620px;
 }
 /**********************************/
 .top{
@@ -421,7 +421,7 @@ button{
     }
     body{
         overflow-x: hidden !important;
-        height: 130vh;
+        height: 115vh;
         max-width: 100% !important;
     }
 /******************************************/  
@@ -450,7 +450,7 @@ button{
     padding: 20px 30px;
 }
 .active{
-    margin-bottom: -500px;
+    margin-bottom: -620px;
 }
 /**********************************/
 .top{
