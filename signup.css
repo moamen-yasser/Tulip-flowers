@@ -318,7 +318,7 @@ section .sign .ssss .bottom {
     }
     body{
         overflow-x: hidden !important;
-        height: 162vh;
+        height: 160vh;
         max-width: 100%;
     }
 /******************************************/  
