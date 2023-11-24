@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>TULIP | Flowers & Gifts</title>
+    <!-- faviconn -->
+    <link rel="shortcut icon" href="images/Tulip.png" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+    <link rel='stylesheet' type='text/css' media='screen' href='market.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='shop.css'>
+</head>
+<body>
+        <!-- --------------------------------------------------------------- -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+        <!-- header -->
+        <header>
+            <nav>
+            <div class="nav_left">
+                <img src="images/Group 2472.png">
+            </div>
+            <div class="nav_middle">
+                <ul>
+                    <li><a  class="home" href="index.html">home</a></li>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="customize.html">Customize</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <li><a href="market.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="signup.html"><i class="fa-regular fa-user"></i></a></li>
+                    <li><div class="burger"><i class="fa-solid fa-bars"></i></div></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <div class="search-container">
+        <input type="text" id="search-input" placeholder="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <ul id="search-suggestions"></ul>
+        </div>
+    <!-- --------------------------------------------------------------- -->
+    <h4 id="header">Product Details</h4>
+
+    <section id="product-details">
+        <div class="container">
+            <div class="row align-items-flex-start">
+
+                <div class="imageee col-lg-7" >
+                    <div class="img1">
+                        <img src="" id="bigimg">
+                    </div>
+                    <div class="imagess">
+                        <img src=""onclick="displayBigImage(this)" id="s1img" >
+                        <img src=""onclick="displayBigImage(this)" id="s2img" >
+                        <img src="" onclick="displayBigImage(this)" id="s3img" >
+                        <img src=""onclick="displayBigImage(this)" id="s4img" >
+                    </div>
+                </div>
+
+                <div class="content col-lg-5">
+                    <div class="div1 vis ">
+                        <div class="row">
+                        <div class="pinklove col-lg-6">
+                            <div class="line">
+                                <h6 id="name">Pink Love</h6>
+                                <i  class="fa-regular fa-heart"onclick="red(this)"></i>
+                            </div>
+                            <p id="dess"></p>
+                            <h3>10.000 EGP</h3>
+                        </div>
+                        <div class="pinklovebtn col-lg-6">
+                            <button id="btttn">Add to cart <a href="#"><i id="ii" class="fa-solid fa-bag-shopping"></i></a>  </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="div2 static vis">
+                        <h2>Product Information</h2>
+                        <p>This is a bouquet that proudly expresses it's femininity. Calming 
+blush tones, garden and delicate floribundas roses bringing all their 
+ruffles to the crinoline ball. An any time floral when the very best is deserved.</p>
+                    </div>
+
+                    <div class="div3 static vis">
+                        <h2>Care & Drying</h2>
+                        <p>Dried flowers are really very easy to take care of, there’s only a few tips that 
+will help you keep them looking beautiful for years to come! They are fragile 
+and they will change over time. Being a natural product they won’tjust 
+perfectly suspend in time indefinitely but they will last for years if you look 
+after them well. And their changing appearance just adds to their charm, 
+think! Whether you’re having dried wedding flowers or simply some stems in 
+a vase to enjoy at home, follow these tips to prolong the life of your dried.</p>
+                    </div>
+
+                    <div class="div4 static vis">
+                        <h2>Delivery/ Return</h2>
+                        <p>All issues must be indicated to us within 24 hours of delivery — if you are 
+calling after hours, please leave a message with a time to reach you and 
+phone number and we will call the next business day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <!-- section 1 -->
+
+    <section class="sec" id="sec">
+        <div class="container">
+            <div class="row">
+                <div class="image">
+                    <img src="images/iconoir_cart.png">
+                    <div class="text">
+                        <h1>YOUR CART IS EMPTY</h1>
+                        <p>Sign in to view your cart and start shopping</p>
+                    </div>
+                    <div class="btns">
+                        <a href="signup.html"><button class="sign"> Sign in / Register</button></a>
+                        <a href="shop.html"><button class="shop"> Shop Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec1" id="sec1">
+        <div class="container">
+            <div class="line">
+                <h2>You might like</h2>
+                <a href="shop.html">see all</a>
+            </div>
+            <div class="row">
+                <div class="block col-lg-4 col-md-6 col-sm-12">
+                    <div class="image">
+                        <img src="images/Photos of P.L_auto_x2.jpg">
+                        <a href="#" id="block1"><i class="fa-solid fa-bag-shopping"></i></a> 
+                        </div>
+                    <div class="line1">
+                        <p>Pink Love</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <p>10,000 EGP</p>
+                        <i  class="fa-regular fa-heart"onclick="red(this)"></i>
+                    </div>
+                </div>
+                <div class="block col-lg-4 col-md-6 col-sm-12">
+                    <div class="image">
+                        <img src="images/Photos of P.L (1).png">
+                        <a href="#" id="block2"><i class="fa-solid fa-bag-shopping"></i></a> 
+                        </div>
+                    <div class="line1">
+                        <p>Pink Love</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <p>10,000 EGP</p>
+                        <i  class="fa-regular fa-heart"onclick="red(this)"></i>
+                    </div>
+                </div>
+                <div class="block col-lg-4 col-md-6 col-sm-12">
+                    <div class="image">
+                        <img src="images/82d45f41-0630-427e-9845-1ce2b77f43a3.jpg">
+                        <a href="#" id="block3"><i class="fa-solid fa-bag-shopping"></i></a> 
+                        </div>
+                    <div class="line1">
+                        <p>Pink Love</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <p>10,000 EGP</p>
+                        <i  class="fa-regular fa-heart"onclick="red(this)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------------------------------- -->
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="list">
+            <div class="block ">
+                <ul>
+                    <li>Connect with us</li>
+                    <li class="icoo"><a  href="#"><i class="fa-solid fa-phone"></i>  0123456789</a></li>
+                    <li class="icoo"><a href="#"><i class="fa-regular fa-envelope"></i>  info@tulip.com</a></li>
+                    <li>
+                        <a href="#"><img src="images/Vector.png"></a>
+                        <a href="#"><img src="images/Instagram.png"></a>
+                        <a href="#"><img src="images/Vector (1).png"></a>
+                        <a href="#"><img src="images/Tiktok.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="block ">
+                <ul>
+                    <li>About</li>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="#">About us  </a></li>
+                    <li><a href="#">Connect us</a></li>
+                    <li><a href="#">Terms & Conditions </a></li>
+                </ul>
+            </div>
+            <div class="block ">
+                <ul>
+                    <li>Site map </li>
+                    <li><a href="#sec31">Best seller </a></li>
+                    <li><a href="#sec32">New arrival</a></li>
+                    <li><a href="customize.html">customize bouquet</a></li>
+                    <li><a href="customize.html">categories</a></li>
+                </ul>
+            </div>
+            <div class="block  ">
+                <ul>
+                    <li> My Account </li>
+                    <li><a href="login.html">Login </a></li>
+                    <li><a href="profile.html">My profile</a></li>
+                    <li><a href="market.html">Basket</a></li>
+                    <li><a href="market.html">My orders </a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="image" >
+                <h3>Newsletter</h3>
+                <p>Sign up for exclusive offers, new collection,
+latest new and more.</p>
+                    <form action="#">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><img src="images/Group 2547.png"></button>
+                    </form>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+<script>
+///////////////////////////////////////////////////////////////////////////////
+//funcctions for filter secarch 
+const searchinput=document.getElementById("search-input");
+    const searchsuggestions=document.getElementById("search-suggestions");
+
+    const suggestionsdata=[
+    "Is The Perfect Way To Show Your Love",
+    "Flowers always make people better"," happier and more helpful","They are sunshine, food and medicine to the soul.",
+    "Perfect For your beloved","Voila Forest Cake With Roses Hand","Emma Remal Scarf With White Roses Bouquet",
+    "Summer Vibes With Orange Roses","Light Pink Bouquet White Wrap","Al-Moled Bouquet With Purple and White roses",
+    "Get Well Soon With Colorful Bouquet","Key L'azurde With White Roses","Felizmoda silver Bracelet With Pink Roses Bouquet",
+    "Now you can customize your bouquet","Through the following three steps, you can create your own unique bouquet",
+    "Decoration","White Kosha","pink Kosha","Discover Our Chocolate Bouquet Delights","Send a with Video Message with Your Flowers by QR Code",
+    "Wedding Flowers Add a Touch of Elegance","We Use Eco-Friendly Flower Paper",
+    "Fresh Flowers Delivered in Air-Conditioned Cars","Add a Personal Touch to Your Bouquet"
+    ]
+
+    function updatesuggestions(query){
+    searchsuggestions.innerHTML="";
+
+    const filtersuggestions=suggestionsdata.filter((item) =>
+        item.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+    );
+
+    filtersuggestions.forEach((suggestion) => {
+        const li =document.createElement('li');
+        li.textContent=suggestion;
+        li.addEventListener('click', () => {
+        setsearchinputvalue(suggestion);
+        hidesuggestions();
+        });
+        searchsuggestions.appendChild(li);
+    });
+
+    togglesuggestions(filtersuggestions.length > 0);
+    }
+
+    function setsearchinputvalue(value){
+    searchinput.value=value;
+    }
+
+    function hidesuggestions(show){
+    searchsuggestions.style.display= show ? 'block' :'none';
+    }
+
+    searchinput.addEventListener('input', () =>{
+    const query =searchinput.value;
+    updatesuggestions(query);
+    });
+
+    document.addEventListener('click' ,(event) => {
+    if (
+        searchsuggestions.contains(event.target) && 
+        event.target !== searchinput
+    )
+    {
+        hidesuggestions();
+    }
+    });
+
+    searchinput.addEventListener("keydown" ,(event) =>{
+    if(event.key === "Enter"){
+        event.preventDefault();
+    }
+    });
+
+
+//var of images and description 
+var bigimg=document.getElementById("bigimg");
+var s1img=document.getElementById("s1img");
+var s2img=document.getElementById("s2img");
+var s3img=document.getElementById("s3img");
+var s4img=document.getElementById("s4img");
+var dess=document.getElementById("dess");
+////////////////////////////////////////////////////////////////////////////
+// var of links transtion to details page
+var block1=document.getElementById("block1");
+var block2=document.getElementById("block2");
+var block3=document.getElementById("block3");
+///////////////////////////////////////////////////////////////////////
+const blocksarray=[block1,block2,block3];
+        fetch('details.json')
+        .then(response => {
+        return response.json();
+        })
+        .then(data =>{
+            for(let j=0 ;j<blocksarray.length ;j++){
+                blocksarray[j].addEventListener("click", (event) => {
+                    document.getElementById("sec").style.display="none";
+                    document.getElementById("header").style.display="block";
+                    document.getElementById("sec1").style.display="none";
+                    document.getElementById("product-details").style.display="block";
+                    for(let i=j ;i<data.length ;i++){
+                        bigimg.src=data[j].bigimgurl;
+                        s1img.src=data[j].s1url;
+                        s2img.src=data[j].s2url;
+                        s3img.src=data[j].s3url;
+                        s4img.src=data[j].s4url;
+                        dess.innerHTML=data[j].des;
+                    }
+                })
+        }
+        })
+/////////////////////////////////////////////////////////////////////////////
+function displayBigImage(element) {
+    const smallImageSrc = element.src;
+    const bigImage = document.getElementById('bigimg');
+    bigImage.src = smallImageSrc;
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src='main.js'></script>
+</body>
+</html>
