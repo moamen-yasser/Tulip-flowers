@@ -502,6 +502,9 @@ textarea{
 #nameerror{
     margin-bottom: 0px;
 }
+    footer{
+        margin-top:-230px;
+    }
 }
 
 /****************************************************************/
